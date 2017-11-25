@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>MdPdataFEST - 100 marplatentes dicen</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='images/favicon1.ico' rel='icon' type='image/x-icon'/>
+
+<!-- 
+FUENTE OFFLINE
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fest.css">
+<head>
+
+<script src="jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+ <style>
+body, html, .main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="w3-dropdown-hover w3-top w3-transparent" style="width:10%">
+    <button class="w3-button w3-red w3-hover-white">Menú</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+		<a href="#top" 		class="w3-bar-item w3-button w3-hover-green" >Home</a>
+		<a href="#mapa"		class="w3-bar-item w3-button w3-hover-teal"	> Temas</a>
+		<a href="#seguridad" class="w3-bar-item w3-button w3-hover-blue">Seguridad</a>
+		<a href="#links" class="w3-bar-item w3-button w3-hover-blue">Links</a>
+    </div>
+  </div>
+  
+
+<div class="main" id="top">
+<section class="w3-grey w3-display-container">
+		
+	<!-- SVG -->	 
+	<div align="center">	  
+		<object class="w3-display-medio" type="image/svg+xml" data="images/main.svg">
+			Your browser does not support SVG
+		</object>
+   </div>
+   
+
+	<div class="w3-display-bottomright w3-large w3-container">  
+		 <!--
+		 <a class="w3-button w3-deep-purple w3-hover-white w3-transparent" href="#seguridad">Seguridad &#10095;</a>
+		  -->
+		  <a class="w3-button w3-xlarge w3-teal w3-hover-white w3-transparent" href="#mapa">Temas &#10095;</a>
+		</div>
+
+ 
+  </section>
+</div>
+
+<div class="main" id="mapa">
+  <section class="w3-sand w3-display-container">
+	  	  
+	  	 
+		  
+  <div align="center">	  
+		<object class="w3-display-medio" type="image/svg+xml" data="images/preo-map.svg">
+			Your browser does not support SVG
+		</object>
+   </div>
+   <!-- Controles -->
+    <div class="w3-display-bottomleft w3-large w3-container">
+		  <a class="w3-button w3-teal w3-hover-white w3-transparent" href="#top">&#10094; Home</a>
+		</div>	
+		<div class="w3-display-bottomright w3-large w3-container">  
+		  <a class="w3-button w3-teal w3-hover-white w3-transparent" href="#seguridad">Seguridad &#10095;</a>
+		</div>
+		
+  </section>
+  
+</div>
+
+<div class="main" id="seguridad">
+  <section class="w3-sand w3-display-container">
+	  	  
+	  	 
+		  
+  <div align="center">	  
+		<object class="w3-display-medio" type="image/svg+xml" data="images/seguridad.svg">
+			Your browser does not support SVG
+		</object>
+   </div>
+   <!-- Controles -->
+    <div class="w3-display-bottomleft w3-large w3-container">
+		  <a class="w3-button w3-teal w3-hover-white w3-transparent" href="#mapa">&#10094; Mapa</a>
+		</div>	
+		
+		 
+		<div class="w3-display-bottomright w3-large w3-container">  
+		  <a class="w3-button w3-teal w3-hover-white w3-transparent" href="#links">Links &#10095;</a>
+		</div>
+		
+		
+  </section>
+  
+</div>
+
+
+
+<div class="main" id="links">
+  <section class="w3-pale-red w3-display-container">
+	  	  
+	  	 
+		  
+  <div align="center">	  
+		<object class="w3-display-medio" type="image/svg+xml" data="images/links.svg">
+			Your browser does not support SVG
+		</object>
+   </div>
+   <!-- Controles -->
+    <div class="w3-display-bottomleft w3-large w3-container">
+		  <a class="w3-button w3-teal w3-hover-white w3-transparent" href="#seguridad">&#10094; Seguridad</a>
+		</div>	
+		
+		 <!-- Controles 
+		<div class="w3-display-bottomright w3-large w3-container">  
+		  <a class="w3-button w3-teal w3-hover-white w3-transparent" href="#contacto">Siguiente &#10095;</a>
+		</div>
+		-->
+		
+  </section>
+  
+</div>
+
+
+
+</body>
+</html>

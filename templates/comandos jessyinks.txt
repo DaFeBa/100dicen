@@ -1,0 +1,38 @@
+:: Vista anterior
+	keyCodeDict[SLIDE_MODE][LEFT_KEY] = function() { return dispatchEffects(-1); };
+
+javascript:dispatchEffects(-1)
+
+
+:: Vista siguiente
+	keyCodeDict[SLIDE_MODE][RIGHT_KEY] = function() { return dispatchEffects(1); };
+
+javascript:dispatchEffects(1)
+
+
+:: Primer vista
+	keyCodeDict[SLIDE_MODE][UP_KEY] = function() { return skipEffects(-1); };
+
+javascript:skipEffects(-1)
+
+
+:: Última vista
+	keyCodeDict[SLIDE_MODE][DOWN_KEY] = function() { return skipEffects(1); };
+
+javascript:skipEffects(1)
+
+
+
+Otra vista
+javascript:dispatchEffects(activeEffect-2)
+
+
+
+::  otra hoja
+javascript:slideSetActiveSlide(4)
+
+
+página anterior
+
+javascript:dispatchEffects(-1);
+
